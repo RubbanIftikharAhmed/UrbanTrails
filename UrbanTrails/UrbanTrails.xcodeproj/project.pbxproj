@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BC1E60542D97E3BD000409A7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BC1E60532D97E3BD000409A7 /* FirebaseAuth */; };
+		BC1E60562D97E3BD000409A7 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = BC1E60552D97E3BD000409A7 /* FirebaseDatabase */; };
+		BC1E60582D97E3BD000409A7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BC1E60572D97E3BD000409A7 /* FirebaseFirestore */; };
+		BC1E605A2D97E3BD000409A7 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = BC1E60592D97E3BD000409A7 /* FirebaseMessaging */; };
+		BC1E605C2D97E3BD000409A7 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = BC1E605B2D97E3BD000409A7 /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		BC1E60342D97D453000409A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +60,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1E605A2D97E3BD000409A7 /* FirebaseMessaging in Frameworks */,
+				BC1E60562D97E3BD000409A7 /* FirebaseDatabase in Frameworks */,
+				BC1E60542D97E3BD000409A7 /* FirebaseAuth in Frameworks */,
+				BC1E605C2D97E3BD000409A7 /* FirebaseStorage in Frameworks */,
+				BC1E60582D97E3BD000409A7 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +125,11 @@
 			);
 			name = UrbanTrails;
 			packageProductDependencies = (
+				BC1E60532D97E3BD000409A7 /* FirebaseAuth */,
+				BC1E60552D97E3BD000409A7 /* FirebaseDatabase */,
+				BC1E60572D97E3BD000409A7 /* FirebaseFirestore */,
+				BC1E60592D97E3BD000409A7 /* FirebaseMessaging */,
+				BC1E605B2D97E3BD000409A7 /* FirebaseStorage */,
 			);
 			productName = UrbanTrails;
 			productReference = BC1E60232D97D450000409A7 /* UrbanTrails.app */;
@@ -195,6 +213,9 @@
 			);
 			mainGroup = BC1E601A2D97D450000409A7;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BC1E60522D97E3BD000409A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BC1E60242D97D450000409A7 /* Products */;
 			projectDirPath = "";
@@ -558,6 +579,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BC1E60522D97E3BD000409A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BC1E60532D97E3BD000409A7 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC1E60522D97E3BD000409A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		BC1E60552D97E3BD000409A7 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC1E60522D97E3BD000409A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		BC1E60572D97E3BD000409A7 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC1E60522D97E3BD000409A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		BC1E60592D97E3BD000409A7 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC1E60522D97E3BD000409A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		BC1E605B2D97E3BD000409A7 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC1E60522D97E3BD000409A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BC1E601B2D97D450000409A7 /* Project object */;
 }
